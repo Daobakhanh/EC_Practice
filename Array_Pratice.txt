@@ -1,0 +1,91 @@
+1. Write a function with 2 input parameters (each parameter is an array). This function returns an array of the same elements in two arrays;
+
+Example: 	array1 = [1,2,3,4,5,6];
+		array2 = [3,4,8,9,12];
+		myFunc(array1, array2); // => [3,4]
+		
+
+2. Find 2 elements with the greatest sum in an array
+Example: [1,7,9,2,5,3,8] => [9,8]
+
+3. Find pairs of elements whose sum is equal to a given number
+Example: [1,7,9,2,5,3,8], sum = 10 => [[1,9] ; [7,3]; [2,8]]
+
+4. Get a new array from the given array so that the elements appear only once (recommend: using Set)
+Example: [1,2,3,1,2,3,4,5,6,4] => [1,2,3,4,5,6]
+
+5. Get a new array of duplicate elements in 2 arrays, each element appears exactly once in the new array
+Example: 	const arr1 = [1, 2, 3, 4, 5, 6, 7, 9, 9, 8, 7, 7];
+		const arr2 = [3, 5, 9, 10, 88];
+			=> [3,5,9]
+
+6. Given an array arr1. Write a function that returns a new array of the elements that appear more than once in arr1. The elements in new array can only appear once in this array.
+Example: 	var arr1 = [1,2,3,4,2,3,5,3,1,1,5,2,3];
+		var myFunc = (inputArr) {
+			// write your code here
+		}
+		var arr2 = myFunc(arr1); // [2,3,1,5]
+			
+7. 	I have an array: ['face', 'zalo', 'face', 'gmail', 'zalo', 'zalo']
+	Write a function with 1 input parameter, an return a new object like this:
+	{'face': 2, 'zalo': 3, 'gmail':1} // 2,3,1 are the number of occurrences of 'face', 'zalo', 'gmail' in the array
+
+Example: 		const myArr = ['face', 'zalo', 'face', 'gmail', 'zalo', 'zalo']
+			const myFunc = (inputArr) {
+				//write somthing here
+			}
+			myFunc(myArr) // {'face': 2, 'zalo': 3, 'gmail':1}
+
+8. 	I have an array like this: var arr1 = [{ make: 'audi', model: 'r8', year: '2012' }, { make: 'audi', model: 'rs5', year: '2013' }, { make: 'ford', model: 'mustang', year: '2012' }, { make: 'ford', model: 'fusion', year: '2015' }, { make: 'kia', model: 'optima', year: '2012' }]
+	Please write a function that has 2 input parameters, 1st param is an array like the above array, and the 2nd param is the name of any property in each object of the array.
+	Example: myFunc('make', arr1);
+	That will return a new object like this (each property is an array, and this array includes objects corresponding to that property):
+	{
+		"audi": [
+			{
+			"make": "audi",
+			"model": "r8",
+			"year": "2012"
+			},
+			{
+			  "make": "audi",
+			  "model": "rs5",
+			  "year": "2013"
+			}
+		], 
+		"ford": [
+			{
+			  "make": "ford",
+			  "model": "mustang",
+			  "year": "2012"
+			},
+			{
+			  "make": "ford",
+			  "model": "fusion",
+			  "year": "2015"
+			}
+		],
+		"kia": [
+			{
+			  "make": "kia",
+			  "model": "optima",
+			  "year": "2012"
+			}
+		]
+	}
+
+9. I have 1 object like this: 
+		const order = {
+			'cart': [
+				{ id: 1, name: "ao dai", amount: 5, price: 100000 },
+				{ id: 2, name: "ao coc", amount: 2, price: 200000 },
+				{ id: 3, name: "quan dai", amount: 3, price: 150000 },
+				{ id: 4, name: "quan coc", amount: 4, price: 130000 },
+			],
+			'customer': 'Name',
+			'address': '12 Giai Phong Street'
+		};
+	Please only use reduce or fold method, only one time, and return 2 variables: totalOfMoney = 1870000, totalOfAmount = 14;
+	
+	
+		
