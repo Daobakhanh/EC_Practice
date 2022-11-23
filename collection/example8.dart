@@ -67,6 +67,7 @@ void main() {
   }
 
   print(myFunc('year', arr1));
+  print(myFunc('make', arr1));
 }
 
 bool isMapContainKeyElement(String key, Map map) {
